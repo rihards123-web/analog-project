@@ -1,55 +1,20 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
+import { NavBarComponent } from '../components/nav-bar/nav-bar.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-products',
   standalone: true,
+  imports: [NavBarComponent],
+  styleUrls: ['./index.styles.css'],
   template: `
-    <div>
-      <a href="https://analogjs.org/" target="_blank">
-        <img alt="Analog Logo" class="logo analog" src="/analog.svg" />
-      </a>
-    </div>
-
-    <h2>Analog</h2>
-
-    <h3>The fullstack meta-framework for Angular!</h3>
-
-    <div class="card">
-      <button type="button" (click)="increment()">Count {{ count() }}</button>
-    </div>
-
-    <p class="read-the-docs">
-      <a href="https://analogjs.org" target="_blank">Docs</a> |
-      <a href="https://github.com/analogjs/analog" target="_blank">GitHub</a> |
-      <a href="https://github.com/sponsors/brandonroberts" target="_blank">
-        Sponsor
-      </a>
-    </p>
-  `,
-  styles: `
-    .logo {
-      will-change: filter;
-    }
-
-    .logo:hover {
-      filter: drop-shadow(0 0 2em #646cffaa);
-    }
-
-    .read-the-docs > * {
-      color: #fff;
-    }
-
-    @media (prefers-color-scheme: light) {
-      .read-the-docs > * {
-        color: #213547;
-      }
-    }
+    <app-nav-bar></app-nav-bar>
+      <section class="landing">
+        <div class="center-container">
+            <h2>All your shopping needs satisfied</h2>
+            <h4>Take time to browse our select in-store goods. Enjoy your shopping <br> experience with Storefront!</h4>
+            <button><a href="/products">Discover our collection</a></button>
+        </div>
+    </section>
   `,
 })
-export default class HomeComponent {
-  count = signal(0);
-
-  increment() {
-    this.count.update((count) => count + 1);
-  }
-}
+export default class IndexPageComponent {}
