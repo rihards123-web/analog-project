@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     mainFields: ['module'],
     alias: {
-      '@app': path.resolve(__dirname, 'src/app'), 
+      '@app': path.resolve(__dirname, 'src/app'), // ✅ THIS is what you add
     },
   },
   plugins: [analog()],

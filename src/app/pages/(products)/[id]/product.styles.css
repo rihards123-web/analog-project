@@ -1,0 +1,122 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 5em; 
+    
+}
+
+
+.container-left{
+    text-align: center;
+    margin-right: 6em;
+}
+
+.container-left p {
+    margin-bottom: 1em;
+}
+
+.product-subtext {
+    font-size: 22px;
+}
+
+.free-shipping {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-image {
+    padding-bottom: 2em;
+}
+
+.product-image img {
+    max-width: 20em;
+    height: 15em;
+}
+
+.container-right{
+    margin-left: 6em;
+}
+
+.product-title {
+    padding-bottom: 2em
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #CCA43B;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-description {
+    margin-top: 2em;
+    padding: 1em;
+    border: #e3e3defb 1px solid;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #CCA43B;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8em 3em;
+}
+
+.add-to-cart:hover {
+    background-color: #ca9b25;
+}
+
+.add-to-cart:active {
+    background-color: #b18821;
+}
+
+.price-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* quantity toggler */
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #CCA43B;  /* Gold border */
+    padding: 0.5em 1em;
+    width: fit-content;
+}
+
+.quantity-btn {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #CCA43B; /* Gold color */
+    padding: 0 0.5em;
+}
+
+.quantity-value {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+/* Make the decrement button gray when at 1 */
+.quantity-btn.decrement:disabled {
+    color: gray;
+    cursor: not-allowed;
+}

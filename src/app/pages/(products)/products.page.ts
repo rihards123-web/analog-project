@@ -7,7 +7,7 @@ import { NavBarComponent } from '@app/components/nav-bar/nav-bar.component';
 @Component({
   selector: 'app-products-list',
   standalone: true,
-  imports: [CommonModule, RouterLink, NavBarComponent],
+  imports: [NavBarComponent, CommonModule, RouterLink],
   styleUrls: ['./products.styles.css'],
   template: `
    <app-nav-bar></app-nav-bar>
