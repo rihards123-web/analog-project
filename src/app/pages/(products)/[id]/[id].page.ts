@@ -100,12 +100,29 @@ export default class ProductDetailComponent implements OnInit {
   
   addToCart() {
     console.log("🛒 Add to cart clicked! Product ID:", this.product.id);
-    
-    // Option 1: Store in localStorage (client-side only, like a session)
-    this.addToLocalStorage();
-    
-    // Option 2: Use API endpoint (server-side storage, like Laravel)
-    // this.addToCartViaApi();
+  
+    this.http.post('/api/cart/add', {
+      product_id: this.product.id,
+      quantity: this.quantity
+    }, { withCredentials: true }).subscribe({
+      next: (response: any) => {
+        console.log("✅ Added to cart:", response);
+        this.cartMessage = "✅ Product added to cart!";
+        alert('Product added to cart');
+  
+        setTimeout(() => {
+          this.cartMessage = '';
+        }, 3000);
+      },
+      error: (error) => {
+        console.error("❌ Error adding to cart:", error);
+        if (error.status === 401) {
+          alert("⚠️ You must be logged in to add items to your cart.");
+        } else {
+          alert("❌ Something went wrong while adding to cart.");
+        }
+      }
+    });
   }
   
   private addToLocalStorage() {

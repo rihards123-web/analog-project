@@ -1,0 +1,101 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12em;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: #CCA43B solid 1.5px;
+    padding: 5em;
+}
+
+.user_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_name input{
+    padding: 1em 4em 1em 1em;
+}
+
+
+.user_address{
+    display: flex;
+    flex-direction: column;
+}
+
+.user_address input {
+    padding: 1em 4em 1em 1em;
+    text-align: left;
+}
+
+.user_address input:first-child {
+    margin-bottom: 1em;
+}
+
+.user_city {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_city input {
+    padding: 1em 4em 1em 1em;
+    text-align: left;
+}
+
+.user_country {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.user_country select{
+    padding: 1em 30em 1em 1em;
+    text-align: left;
+}
+
+.user_country label {
+    color: #777;
+}
+
+.checkmark {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-to-cart {
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+}
+
+.back-to-cart a {
+    color:#CCA43B;
+    font-size: 18px;
+}
+
+.go-to-shopping {
+    background-color: #CCA43B;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 3.5em 0.5em 3.5em;
+    
+}
+
+.go-to-shopping a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}

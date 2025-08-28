@@ -1,0 +1,92 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12em;
+}
+
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    border: #E5E5E5 2px solid;
+    border-radius: 5px;
+}
+
+.payment-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    background-color: #cca33b69;
+    width: 37em;
+    padding: 0.7em 1em;
+    
+}
+
+.payment-head h3 {
+    color: #CCA43B;
+}
+
+.card-container {
+    padding: 2em 3em;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card input {
+    padding: 1em 4em 1em 1em;
+    margin-bottom: 1em;
+    border: #E5E5E5 1.5px solid;
+
+}
+
+.expiry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.expiry input {
+    padding: 1em 4em 1em 1em;
+    border: #E5E5E5 1.5px solid;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+    margin-top: 2em;
+}
+
+
+.back-to-checkout {
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+}
+
+
+.back-to-checkout a {
+    color:#CCA43B;
+    font-size: 18px;
+}
+
+.go-to-payment {
+    background-color: #CCA43B;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 3.5em 0.5em 3.5em;
+}
+
+.go-to-payment a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}

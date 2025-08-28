@@ -1,0 +1,152 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.product{
+    display: flex;
+}
+
+.product img {
+    max-height: 8em;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-info p {
+    margin-bottom: 1em;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.remove-from-cart{
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    color:#CCA43B;
+    text-align: left;
+    font-size: 16px;
+}
+
+.remove-from-cart:hover{
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4em 4em 0 4em;
+}
+
+.wrapper h2 {
+    margin-bottom: 1em;
+}
+
+.wrapper a {
+    color: #CCA43B;
+    margin-bottom: 4em;
+}
+
+.cart-container {
+    display: grid;
+    margin: 4em;
+}
+
+.cart-head {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr; 
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.cart-head p:first-child{
+    text-align: left;
+}
+
+
+.cart-head p:last-child{
+    text-align: right;
+}
+
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr; /* Same as header */
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.total-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+.cart-total {
+    display: flex;
+    gap: 1em;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.cart-total-btn{
+    display: flex;
+    margin-left: 4em;
+
+}
+
+.cart-total-btn button {
+    background-color: #CCA43B;
+    border: none;
+    border-radius: 5px;
+    padding: 1em 3.5em 1em 3.5em;
+}
+
+.cart-total-btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.cart-total-btn button:hover {
+    background-color: #ca9b25;
+}
+
+.cart-total-btn button:active {
+    background-color: #b18821;
+}

@@ -1,7 +1,7 @@
 import { defineEventHandler } from 'h3';
 import mysql from 'mysql2/promise';
 
-// Create a connection pool to the database
+
 const pool = mysql.createPool({
   host: 'localhost',       // Your MySQL host
   user: 'root',            // Your MySQL username

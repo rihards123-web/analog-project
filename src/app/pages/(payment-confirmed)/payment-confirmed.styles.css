@@ -1,0 +1,62 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.image-container img {
+    height: 8em;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+.header-container h2 {
+    margin-bottom: 0.5em;
+}
+
+.header-container p{
+    color: #CCA43B;
+    font-weight: bold;
+}
+
+.desc-container {
+    text-align: center;
+    color: #818181;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.back-to-shopping {
+    padding: 1em 3.5em 1em 3.5em;
+    background-color: #CCA43B;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
